@@ -1,19 +1,21 @@
 package Entrega2;
 
+
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-public class Main {
+public class Test {
     public static void main(String[] args) {
         List<Persona> personas = new ArrayList<>();
 
-        personas.add(new Persona("Carlos", "Gómez"));
-        personas.add(new Persona("Ana", "Martínez"));
-        personas.add(new Persona("Luis", "Rodríguez"));
-        personas.add(new Persona("María", "Pérez"));
-        personas.add(new Persona("Juan", "Hernández"));
+        personas.add(new Persona("Daniela", "Gómez"));
+        personas.add(new Persona("Flavio", "Carracedo"));
+        personas.add(new Persona("Ruben", "Roca"));
+        personas.add(new Persona("Hernan", "Furnari"));
+        personas.add(new Persona("Marcelo", "Sosa"));
 
         // Ordenar por nombre
         Collections.sort(personas, Comparator.comparing(Persona::getNombre));
